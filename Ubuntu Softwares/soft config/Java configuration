@@ -1,0 +1,29 @@
+try this rohit
+
+in the terminal (ctrl+alt+t)
+
+-----sudo gedit .bashrc
+
+add this path
+
+
+
+--------JAVA_HOME=/home/praveen/programfiles/jdk1.6.0_27
+        export JAVA_HOME
+        PATH=$JAVA_HOME/bin:$PATH
+        export PATH
+
+
+exit it
+
+
+
+in the terminal
+
+
+---------source .bashrc
+
+
+now 
+
+java - version
