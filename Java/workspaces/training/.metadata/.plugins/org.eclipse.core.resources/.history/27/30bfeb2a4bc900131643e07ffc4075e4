@@ -1,0 +1,9 @@
+package sudoku.testcases;
+
+public class Sudoku {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package indentation.condition;
+
+public interface Condition {
+	public String condition(String readFilePath);
+
+}

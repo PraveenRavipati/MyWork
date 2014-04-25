@@ -1,0 +1,11 @@
+package com.binarysearch.main;
+
+import com.binarysearch.bean.EmployeeBean;
+
+public class EmpDetailsSearch {
+
+	public static void main(String[] args) {
+		System.out.println("Enter The number of records you want");
+	}
+
+}

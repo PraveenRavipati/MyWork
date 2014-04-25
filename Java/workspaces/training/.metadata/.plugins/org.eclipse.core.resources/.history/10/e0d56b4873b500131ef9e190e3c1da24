@@ -1,0 +1,14 @@
+package com.binarysearch.criteria;
+
+import com.binarysearch.bean.EmployeeBean;
+import com.binarysearch.rules.Criteria;
+
+public class MyCriteria implements Criteria {
+
+	@Override
+	public int checkCondition(Object Employee, Object key) {
+		EmployeeBean<Employee> emp=key;
+		return 0;
+	}
+
+}

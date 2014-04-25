@@ -1,0 +1,17 @@
+package com.binarysearch.main;
+
+import java.util.Scanner;
+
+import com.binarysearch.bean.EmployeeBean;
+
+public class EmpDetailsSearch {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("\nEnter The number of records you want:\t");
+		int len=s.nextInt();
+		EmployeeBean<EmpBean>[] EmpArray=new EmployeeBean<EmpBean>[len];
+		
+	}
+
+}

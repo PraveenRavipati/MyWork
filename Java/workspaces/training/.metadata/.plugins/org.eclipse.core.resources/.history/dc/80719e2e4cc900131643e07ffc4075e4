@@ -1,0 +1,25 @@
+package sudoku.testcases;
+
+public class Sudoku {
+	static int M[]=new int[4];
+	public static void main(String[] args) {
+		
+	}
+	public void sudokuFinder() {
+		
+	}
+	public boolean isSafeToPalce(int r) {
+		for(int i=0;i<r;i++)
+		{
+			if(m[i]==m[r]||)
+			{
+				
+			}
+		}
+		return false;
+	}
+	public void out() {
+		
+	}
+
+}

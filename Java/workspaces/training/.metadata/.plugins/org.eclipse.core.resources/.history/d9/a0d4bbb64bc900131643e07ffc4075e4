@@ -1,0 +1,18 @@
+package sudoku.testcases;
+
+public class Sudoku {
+	static int Matrix[]=new int[4];
+	public static void main(String[] args) {
+		
+	}
+	public void sudokuFinder() {
+		
+	}
+	public boolean isSafeToPalce(int req_position) {
+		return false;
+	}
+	public void out() {
+		
+	}
+
+}

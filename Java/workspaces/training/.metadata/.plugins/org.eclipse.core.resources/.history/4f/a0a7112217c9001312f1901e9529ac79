@@ -1,0 +1,67 @@
+package equen.v2;
+
+import java.util.Scanner;
+
+import com.eightqueen.test.bean.EqMat;
+
+public class Equeen {
+	static int Matrix[];
+	static int sum = 0;
+
+	boolean place(int pos) {
+		int i;
+		for (i = 1; i < pos; i++) {
+			if ((Matrix[i] == Matrix[pos])
+					|| ((Math.abs(Matrix[i] - Matrix[pos]) == Math.abs(i - pos))))
+				return false;
+		}
+		return true;
+	}
+
+	public static void main(String[] args) {
+		int i;
+		
+		Scanner s=new Scanner(System.in);
+		 System.out.println("Enter the number of Queens\n");
+		 n=s.nextInt();
+		 Matrix=EqMat.intialize(n);
+		 Equeen eq=new Equeen();
+		 eq.queen(n);
+		 System.out.println("\nTotal solutions="+sum);
+	}
+
+	void print_sol(int n) {
+		int i, j;
+		sum++;
+		System.out.println("\n\nSolution :\n" + sum);
+		for (i = 1; i <= n; i++) {
+			for (j = 1; j <= n; j++) {
+				if (Matrix[i] == j)
+					System.out.print("Q\t");
+				else
+					System.out.print("*\t");
+			}
+			System.out.println("\n");
+		}
+	}
+
+	void queen(int n) {
+		int k = 1;
+		Matrix[k] = 0;
+		while (k != 0) {
+			Matrix[k] = Matrix[k] + 1;
+			while ((Matrix[k] <= n) && (!place(k)))
+				Matrix[k]++;
+			if (Matrix[k] <= n) {
+				if (k == n)
+					print_sol(n);
+				else {
+					k++;
+					Matrix[k] = 0;
+				}
+			} else
+				k--;
+		}
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.binarysearch.rules;
+
+import com.binarysearch.bean.Employee;
+
+public abstract class MyCriteria {
+	private static final MyCriteria MyCriteria = null;
+	public int checkCodition(Object Element, Object searchKey) {
+		int status = 1;
+		Employee emp = (Employee) Element;
+		Employee key = (Employee) searchKey;
+		if ((key.getEmpId()) != 0) {
+			if (emp.getEmpId() == key.getEmpId()) {
+				status = 0;
+				return status;
+			} else if (emp.getEmpId() > key.getEmpId()) {
+				status = 1;
+				return status;
+			} else {
+				status = -1;
+				return status;
+			}
+		} else if ((emp.getEmpName()) != null) {
+			status = emp.getEmpName().compareToIgnoreCase(key.getEmpName());
+			return status;
+		} else {
+			System.out.println("sorry try agin");
+		}
+		return 1;
+	}
+	public MyCriteria instace()
+	{
+		return MyCriteria;
+	}
+}

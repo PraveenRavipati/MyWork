@@ -1,0 +1,65 @@
+package com.eightqueen.test.programs;
+
+public class Eqns {
+	static int m[]=new int[8];
+
+	public static void main(String[] args) {
+		Eqns eqns=new Eqns();
+//		eqns.display();
+		int x=0;
+		while(x>=0)
+		{
+			while((m[x]<8)&&(eqns.isSafe(x)))
+			{
+				m[x]++;
+			}
+			if(m[x]>=7)
+			{
+				if(x==7)
+				{
+					eqns.display();
+				}
+				else {
+					m[x]=0;
+				}
+			}
+			else {
+				x--;
+			}
+		}
+		
+	}
+	boolean isSafe(int x)
+	{
+		for(int i=0;i<x;i++)
+		{
+			if(m[i]==m[x]||((Math.abs(m[i]-m[x]))==(Math.abs(i-x))))
+			{
+				return false;
+			}
+		}
+		return true;
+	}
+	void display()
+	{
+		
+		for(int i=0;i<8;i++)
+		{
+			for(int j=0;j<8;j++)
+			{
+				if(m[i]==j)
+				{
+					
+				}
+			}
+		}
+	}
+	/*void display()
+	{
+		for(int i=0;i<8;i++)
+		{
+			System.out.println("m: at index"+(i+1)+" is "+m[i]);
+		}
+	}
+*/
+}
