@@ -1,0 +1,66 @@
+package com.eightqueen.test.programs;
+
+
+public class EQuen {
+	static int Matrix[] = new int[8];
+	static int sno=0;
+
+	public void EqueenFinder() {
+		System.out.println("the solutions are");
+		for(int i=0;i>=0;)
+		{
+			while((Matrix[i]<8)&&(!isSafeToPalce(i)))
+			{
+				Matrix[i]++;
+//				System.out.println("m:"+m[x]);
+			}
+			if (Matrix[i]>7) {
+				Matrix[i]=0;
+				i--;
+				if(i<0){
+					System.out.println("Thank Q");
+				}else {
+					Matrix[i]=Matrix[i]+1;
+				}
+				
+			}
+			else {
+				if(i==7)
+				{
+					out();
+					Matrix[i]++;
+				}
+				else {
+					i++;
+					Matrix[i]=0;
+				}
+			}
+		}
+		
+	}
+	
+	public static boolean isSafeToPalce(int x) {
+		boolean safe=true;
+		for(int i=0;i<x;i++)
+		{
+			if(Matrix[i]==Matrix[x]||((Math.abs(Matrix[i]-Matrix[x]))==(Math.abs(i-x))))
+			{
+				safe=false;
+				return safe;
+			}
+		}
+		return safe;
+	}
+	public static void out()
+	{	System.out.println("\n "+sno);
+		for(int i=0;i<8;i++)
+		{
+			System.out.print("("+i+","+Matrix[i]+")");
+		}
+	}
+	public static void main(String[] args) {
+		EQuen eq=new EQuen();
+		eq.EqueenFinder();
+	}
+
+}

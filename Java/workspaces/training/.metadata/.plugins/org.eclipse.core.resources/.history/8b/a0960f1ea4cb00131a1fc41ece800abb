@@ -1,0 +1,44 @@
+package com.bank_transaction.thread;
+
+import java.io.File;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class BankTransaction_Using_Threads {
+	public static void main(String[] args) {
+		ExecutorService service = Executors.newFixedThreadPool(2);
+		File folder = new File("/home/praveen/Desktop/works/Banking using threads/");
+		File[] listOfFiles = folder.listFiles();
+
+		for (File file : listOfFiles) {
+			if (file.isFile()) {
+				System.out.println(file.getName());
+				
+			}
+		}
+
+	
+	}
+	final class Task implements Runnable{
+	    private String taskId;
+	  
+	    public Task(String s){
+	        this.taskId = s;
+	    }
+	  
+	    @Override
+	    public void run() {
+	    	for(int i=0;i<10;i++)
+	    	{
+	    		try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+	    	}
+	        System.out.println("Task ID : " + this.taskId +" performed by " 
+	                           + Thread.currentThread().getName());
+	    }
+	  
+	}
+}

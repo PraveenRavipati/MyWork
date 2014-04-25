@@ -1,0 +1,36 @@
+package com.binarysearch.main;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import com.binarysearch.bean.EmployeeBean;
+
+public class EmpDetailsSearch {
+
+	public static void main(String[] args) {
+		EmpDetailsSearch eds = new EmpDetailsSearch();
+		Scanner s = new Scanner(System.in);
+		System.out.print("\nEnter The number of records you want:\t");
+		int len = s.nextInt();
+		//EmpArray = eds.input(len);
+		List<EmployeeBean> emplist=eds.input(len);
+	}
+
+	public List<EmployeeBean> input(int len) {
+		Scanner s=new Scanner(System.in);
+		EmployeeBean[] EmpArray = new EmployeeBean[len];
+		List<EmployeeBean> list=new ArrayList<EmployeeBean>();
+		for(int i=0;i<EmpArray.length;i++)
+		{
+			System.out.println("Enter the ID number");
+			try {
+				int id=s.nextInt();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return null;
+	}
+}

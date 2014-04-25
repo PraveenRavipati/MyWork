@@ -1,0 +1,23 @@
+package com.theard.basics;
+
+public class Lifecycle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class MyTheard extends Thread
+{
+	private int i=0;
+	private void incrI() {
+		i++;
+	}
+	private int getI() {
+		return i;
+	}
+	public void run() {
+		
+	}
+}

@@ -1,0 +1,29 @@
+package testClasses.tests;
+
+import java.util.Scanner;
+
+import com.myrules.MyCriteria;
+import com.searchs.BinarySearch;
+
+public class Test extends MyCriteria{
+
+	public static void main(String[] args) {
+		MyCriteria m=new Test();
+		Scanner s = new Scanner(System.in);
+		System.out.print("How many records do you want to Enter:\t");
+		int len = s.nextInt();
+		Object[] emp = m.input(len);
+		Object SearchKey = m.inputOfSearchKey();
+		if (SearchKey != null) {
+			if (m.isExist(emp, SearchKey,m)) {
+				System.out.println("The Employee found");
+			} else {
+				System.out.println("The Employee Not found");
+			}
+		} else {
+			System.out.println("Sorry try again...!");
+		}
+
+	}
+
+}

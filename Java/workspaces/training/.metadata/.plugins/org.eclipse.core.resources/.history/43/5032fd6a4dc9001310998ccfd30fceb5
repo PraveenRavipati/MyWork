@@ -1,0 +1,65 @@
+package com.eightqueen.test.programs;
+
+import java.util.Scanner;
+
+public class EQuen {
+	static int Matrix[] = new int[8];
+	static int sno = 0;
+	public void EqueenFinder() {
+		System.out.println("the solutions are");
+		for (int row = 0; row >= 0;) {
+			while ((Matrix[row] < 8) && (!isSafeToPalce(row))) {
+				Matrix[row]++;
+			}
+			if (Matrix[row] > 7) {
+				Matrix[row] = 0;
+				row--;
+				if (row < 0) {
+					System.out.println("\n\nThank Q");
+				} else {
+					Matrix[row] = Matrix[row] + 1;
+				}
+
+			} else {
+				if (row == 7) {
+					out();
+					Matrix[row]++;
+				} else {
+					row++;
+					Matrix[row] = 0;
+				}
+			}
+		}
+
+	}
+
+	public boolean isSafeToPalce(int req_position) {
+		boolean safe = true;
+		for (int curr_row = 0; curr_row < req_position; curr_row++) {
+			if (Matrix[curr_row] == Matrix[req_position]
+					|| ((Math.abs(Matrix[curr_row] - Matrix[req_position])) == (Math.abs(curr_row
+							- req_position)))) {
+				safe = false;
+				return safe;
+			}
+		}
+		return safe;
+	}
+
+	public void out() {
+		sno++;
+		System.out.print("\n " + sno + ": ");
+		for (int row = 0; row < 8; row++) {
+			System.out.print("(" + row + "," + Matrix[row] + ")");
+		}
+	}
+
+	public static void main(String[] args) {
+		EQuen eq = new EQuen();
+		Scanner s=new Scanner(System.in);
+		System.out.print("\nEnter the Number of Queens:");
+		int n=s.nextInt();
+		eq.EqueenFinder(n);
+	}
+
+}

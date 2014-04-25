@@ -1,0 +1,21 @@
+package com.bank_transaction.thread;
+
+import java.io.File;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class BankTransaction_Using_Threads {
+	public static void main(String[] args) {
+
+		File folder = new File("/home/praveen/Desktop/works/Banking using threads/");
+		File[] listOfFiles = folder.listFiles();
+
+		for (File file : listOfFiles) {
+			if (file.isFile()) {
+				ExecutorService service = Executors.newFixedThreadPool(file.getName());
+			}
+		}
+
+	
+	}
+}

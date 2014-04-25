@@ -1,0 +1,12 @@
+package testClasses.tests;
+
+import com.myrules.MyCriteria;
+
+public class test {
+
+	public static void main(String[] args) {
+		MyCriteria m=new MyCriteria() {
+		};
+	}
+
+}
