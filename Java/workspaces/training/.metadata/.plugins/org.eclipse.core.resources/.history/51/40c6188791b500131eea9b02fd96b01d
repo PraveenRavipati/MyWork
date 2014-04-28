@@ -1,8 +1,0 @@
-package com.binarysearch.rules;
-
-public class MyCriteria {
-	int checkCodition(Object Element,Object Key)
-	{
-		
-	}
-}

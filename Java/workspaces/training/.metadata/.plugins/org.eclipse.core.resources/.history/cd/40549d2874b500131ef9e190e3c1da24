@@ -1,9 +1,0 @@
-package com.binarysearch.main;
-
-public class EmpDetailsSearch {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

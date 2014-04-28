@@ -1,5 +1,0 @@
-package indentation.writecondition;
-
-public interface WriteCondition {
-
-}
