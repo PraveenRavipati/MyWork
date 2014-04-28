@@ -1,0 +1,17 @@
+package com.bank_transaction.thread.tests;
+
+public class StringTest {
+	public static void main(String[] args) {
+		String st="praveen";
+		String s1="praveen";
+		if(st==s1)
+		{
+			System.out.println("ture");
+		}
+		else {
+			System.out.println("flase");
+		}
+	}
+
+
+}

@@ -1,0 +1,41 @@
+package bankTransactionSampleProject.testcases;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+
+public class SynchronizationTest1 {
+
+	public static void main(String[] args) {
+		MyThread st1=new MyThread();
+		Hashtable<String, Double> userAccount = new Hashtable<String, Double>();
+		File folder = new File("/home/praveen/Desktop/works/new input/");
+		File[] listOfFiles = folder.listFiles();
+		List<Thread> list = new ArrayList<Thread>();
+
+		for (File file : listOfFiles) {
+			if (file.isFile()) {
+				MyThread t = new MyThread(file.getAbsolutePath(), userAccount);
+				t.start();
+				System.out.println("in if");
+				list.add(t);
+			}
+		}
+		for (Thread t : list) {
+			try {
+				t.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		st1.summary(hashtable);
+		System.out.println("Main completed");
+		if (hashtable != null) {
+			// System.out.println("ya");
+			hashtable = null;
+		}
+		
+	}
+
+}

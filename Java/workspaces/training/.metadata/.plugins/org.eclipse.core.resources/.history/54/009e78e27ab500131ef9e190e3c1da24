@@ -1,0 +1,49 @@
+package com.binarysearch.main;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
+
+import com.binarysearch.bean.EmployeeBean;
+
+public class EmpDetailsSearch<EmpBean, EmpArray> {
+
+	public static void main(String[] args) {
+		EmpDetailsSearch eds = new EmpDetailsSearch();
+		Scanner s = new Scanner(System.in);
+		System.out.print("\nEnter The number of records you want:\t");
+		int len = s.nextInt();
+		// EmpArray = eds.input(len);
+		List<EmployeeBean> emplist = ArrayList<EmployeeBean>();
+		emplist=eds.input(len);
+	}
+/*
+	public List<EmpArray> input(int len) {
+		int id = 0;
+		String Name = null;
+		Scanner s = new Scanner(System.in);
+		EmployeeBean[] EmpArray = new EmployeeBean[len];
+		List<EmpArray> list = new ArrayList<EmpArray>();
+		for (int i = 0; i < EmpArray.length; i++) {
+			System.out.print("\nEnter the Employee ID number");
+			try {
+				id = s.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.print("\nThe ID Should Be Number");
+				return null;
+			}
+			System.out.print("\nEnter The Name");
+			try {
+				Name = s.next();
+			} catch (InputMismatchException e) {
+				System.out.println("The Name should not number");
+				return null;
+			}
+			EmpArray[i] = new EmployeeBean<EmpBean>(id, Name);
+		}
+		list.addAll(EmpArray);
+		return list;
+	}*/
+}

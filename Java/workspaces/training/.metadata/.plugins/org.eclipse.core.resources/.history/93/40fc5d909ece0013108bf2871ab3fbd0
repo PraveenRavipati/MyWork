@@ -1,0 +1,5 @@
+package com.snapfish.threads.beans;
+
+public class Account {
+
+}

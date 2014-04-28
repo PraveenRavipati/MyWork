@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.binarysearch.rules;
+
+/**
+ * @author praveen
+ *
+ */
+public interface Criteria {
+	int checkCondition(Object[] Employee,Object key);
+}

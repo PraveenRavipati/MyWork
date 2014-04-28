@@ -1,0 +1,28 @@
+package com.theard.basics.examples;
+
+public class Exp1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class MyIncriment implements Runnable
+{
+
+	@Override
+	public void run() {
+		
+	}
+	
+}
+class MyDicriment implements Runnable
+{
+
+	@Override
+	public void run() {
+		
+	}
+	
+}

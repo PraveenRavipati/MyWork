@@ -1,0 +1,26 @@
+package com.snapfish.threads.beans;
+
+import java.util.HashSet;
+
+public class AccountRecord {
+	static HashSet<AccountRecord>=new HashSet<AccountRecord>();
+	private int AccountId;
+	private double amount;
+	public int getAccountId() {
+		return AccountId;
+	}
+	public void setAccountId(int accountId) {
+		AccountId = accountId;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	public AccountRecord setAccountRecord(int UserId,double amount)
+	{
+		
+		return this;
+	}
+}

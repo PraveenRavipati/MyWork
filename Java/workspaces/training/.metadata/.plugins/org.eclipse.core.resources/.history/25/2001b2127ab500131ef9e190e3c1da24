@@ -1,0 +1,25 @@
+package com.binarysearch.main;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.InputMismatchException;
+import java.util.List;
+import java.util.Scanner;
+
+import com.binarysearch.bean.EmployeeBean;
+
+public class EmpDetailsSearch<EmpBean, EmpArray> {
+
+	public static void main(String[] args) {
+		EmpDetailsSearch eds = new EmpDetailsSearch();
+		Scanner s = new Scanner(System.in);
+		System.out.print("\nEnter The number of records you want:\t");
+		int len = s.nextInt();
+		// EmpArray = eds.input(len);
+		List<EmployeeBean> emplist = eds.input(len);
+	}
+
+	public List input(int len) {
+
+	}
+}

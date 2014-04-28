@@ -1,0 +1,18 @@
+package com.inteended.switching;
+
+public class CoditionImpl implements Condtion {
+
+	@Override
+	public int commentCondition(char first, char second) {
+		
+		return 0;
+	}
+
+	@Override
+	public int charCondition(char charactor) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	
+}

@@ -1,0 +1,8 @@
+package com.binarysearch.search;
+
+public class BinarySearch {
+	public boolean binarySearch()
+	{
+		return false;
+	}
+}
