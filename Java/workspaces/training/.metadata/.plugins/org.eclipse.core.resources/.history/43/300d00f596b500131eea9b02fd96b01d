@@ -1,9 +1,0 @@
-package com.binarysearch.search;
-
-
-public class BinarySearch {
-	public boolean binarySearch(Object[] Elements,Object Key)
-	{
-		return false;
-	}
-}

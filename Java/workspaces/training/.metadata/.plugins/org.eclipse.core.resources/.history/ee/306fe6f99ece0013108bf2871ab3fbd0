@@ -1,6 +1,0 @@
-package com.snapfish.threads.beans;
-
-public class AccountRecord {
-	private String AccountID
-
-}

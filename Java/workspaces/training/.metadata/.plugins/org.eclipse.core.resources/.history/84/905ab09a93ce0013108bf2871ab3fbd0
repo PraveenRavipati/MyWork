@@ -1,9 +1,0 @@
-package bankTransactionSampleProject.testcases;
-
-public class SynchronizationTest1 {
-
-	public static void main(String[] args) {
-		
-	}
-
-}

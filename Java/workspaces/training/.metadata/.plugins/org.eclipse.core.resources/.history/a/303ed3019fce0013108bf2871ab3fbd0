@@ -1,8 +1,0 @@
-package com.snapfish.threads.beans;
-
-public class AccountRecord {
-	private String AccountId;
-	private String transaction;
-	private double amount;
-
-}
