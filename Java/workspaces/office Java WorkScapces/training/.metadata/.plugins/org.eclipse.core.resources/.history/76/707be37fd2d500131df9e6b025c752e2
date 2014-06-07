@@ -1,0 +1,47 @@
+package com.vl.version1;
+
+
+public class ReadWriteProgram {
+	public static void main(String[] args) {
+		String Filepath="/home/praveen/Desktop/file1.txt";
+		String operation[] = {"Write","Read","Read", "Write","Write","Read"};
+		for (int i = 0; i < operation.length; i++) {
+			FileOperation rw = new FileOperation(operation[i],Filepath);
+			rw.start();
+	}
+}
+
+class FileOperation extends Thread{
+	
+	public FileOperation(String string, String filepath) {
+		
+	}
+	}
+
+	public void readFile() {
+
+	}
+
+	public void writeFile() {
+
+	}
+}
+
+class ReadLock {
+	public void getReadLock() {
+
+	}
+
+	public void release() {
+
+	}
+}
+class WriteLock {
+	public void getWriteLock() {
+
+	}
+
+	public void release() {
+
+	}
+}

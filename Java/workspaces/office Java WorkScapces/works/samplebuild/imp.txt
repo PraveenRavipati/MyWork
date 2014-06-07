@@ -1,0 +1,53 @@
+
+		<copydir dest="${dest}/ohms/calendar" src="${src}/calendar"></copydir>
+		<copydir dest="${dest}/ohms/images" src="${src}/images"></copydir>
+		<copydir dest="${dest}/ohms/js" src="${src}/js"></copydir>
+		<copydir dest="${dest}/ohms/pagelet" src="${src}/pagelet"></copydir>
+		
+		
+		
+		
+		
+		
+		
+		
+			//for tomcat start and stop
+
+	
+	<target name="tomcat-start">
+	        <echo>---------------------------------------</echo>
+	        <echo>- target - tomcat-start</echo>
+	        <echo>-</echo>
+	        <echo>- starting tomcat</echo>
+	        <echo>---------------------------------------</echo>
+
+	  <java classname="org.apache.catalina.startup.Bootstrap" failonerror="true" fork="true">
+	            <classpath path="${apache.tomcat7}/bin/bootstrap.jar:${apache.tomcat7}/bin/tomcat-juli.jar" />
+
+	            <jvmarg value="-Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager" />
+	   <jvmarg value="-Djava.util.logging.config.file=${apache.tomcat7}/conf/logging.properties" />
+
+	            <jvmarg value="-Dcatalina.home=${apache.tomcat7}" />
+	            <jvmarg value="-Dcatalina.base=${apache.tomcat7}" />
+
+	            <jvmarg value="-Djava.io.tmpdir=${apache.tomcat7}/temp" />
+
+	   <arg line="start" />
+	  </java>
+
+	 </target>
+	<target name="tomcat-stop">
+	        <echo>---------------------------------------</echo>
+	        <echo>- target - tomcat-stop</echo>
+	        <echo>-</echo>
+	        <echo>- stopping tomcat</echo>
+	        <echo>---------------------------------------</echo>
+
+	  <java classname="org.apache.catalina.startup.Bootstrap" fork="true">
+	   <classpath path="${apache.tomcat7}/bin/bootstrap.jar:${apache.tomcat7}/bin/tomcat-juli.jar" />
+	            <jvmarg value="-Dcatalina.home=${apache.tomcat7}" />
+
+	   <arg line="stop" />
+	  </java>
+
+	 </target>

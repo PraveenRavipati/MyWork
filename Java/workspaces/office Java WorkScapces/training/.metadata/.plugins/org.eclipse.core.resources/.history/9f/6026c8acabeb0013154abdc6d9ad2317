@@ -1,0 +1,24 @@
+package com.vl.resources;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
+
+public class PropertyLoader {
+	private final static String fileName="./WEB-INF/properties/user.properties";
+	private final static Properties PROPERTIES=new Properties();
+	public Properties getInstance() throws FileNotFoundException{
+		InputStream input = null;
+		input=new FileInputStream("/home/praveen/Downloads/wokspaces/training/LoginProperties/WebContent/WEB-INF/properties/user.properties");
+		try {
+			PROPERTIES.load(input);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return PROPERTIES;
+	}
+}

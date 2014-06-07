@@ -1,0 +1,48 @@
+package com.myrules;
+
+import praveen.rules.Criteria;
+
+public abstract class MyCriteria implements Criteria{
+        /*This method checks condition for every elemnet with key*/
+	public int checkCondition(Object Element,Object key)
+	{
+		Integer EmployeeID=null;
+		String EmployeeName=null;
+		Integer searchID=0;
+		String searchName=null;
+		int status;
+		try {
+			searchID = (Integer) key;
+			EmployeeID=(Integer) Element;
+		} catch (ClassCastException e) {
+			searchName=(String) key;
+			EmployeeName=(String) Element;
+		}
+		if(searchID!=0)
+		{
+			int id=EmployeeID;
+			if(id==searchID)
+			{
+				status=0;
+				return status;
+			}
+			else if (id>searchID) {
+				status=1;
+				return status;
+			}
+			else {
+				status=-1;
+				return status;
+			}
+		}else if(searchName!=null)
+		{
+			status=searchName.compareToIgnoreCase(EmployeeName);
+			return status;
+		}
+		else
+		{
+			System.out.println("sorry try agin");
+		}
+		return 1;
+	}
+}

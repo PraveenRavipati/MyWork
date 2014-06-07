@@ -1,0 +1,4 @@
+#ohms
+dest=/opt/apache-tomcat-7.0.53/webapps/
+src=/home/praveen/Desktop/ant/ohms
+destlib=/opt/apache-tomcat-7.0.53/lib

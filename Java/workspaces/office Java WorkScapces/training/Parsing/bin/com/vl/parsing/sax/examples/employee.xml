@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\users\praveen\Desktop\proxml\employee.xsd">
+    <Employee id="1">
+        <age>29</age>
+        <name>Pankaj</name>
+        <gender>Male</gender>
+        <role>Java Developer</role>
+    </Employee>
+    <Employee id="2">
+        <age>41</age>
+        <name>Lisa</name>
+        <gender>Female</gender>
+        <role>CEO</role>
+    </Employee>
+    <Employee id="3">
+        <age>40</age>
+        <name>Tom</name>
+        <gender>Male</gender>
+        <role>Manager</role>
+    </Employee>
+    <Employee id="4">
+        <age>25</age>
+        <name>Meghna</name>
+        <gender>Female</gender>
+        <role>Manager</role>
+    </Employee>
+</Employees>

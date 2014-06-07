@@ -1,0 +1,49 @@
+package com.mainLogic;
+
+import java.util.Hashtable;
+
+import com.beans.Matrix;
+
+public class EightQueen {
+	public static boolean isSafeToPalce(int x1, int y1, int x2, int y2) {
+		boolean safe = false;
+		int slope = Math.abs(((y2 - y1) / (x2 - x1)));
+		if (x1 == x2) {
+			safe = false;
+		} else if (y1 == y2) {
+			safe = false;
+		} else if (slope == 1) {
+			safe = false;
+		} else {
+			safe = true;
+		}
+		return safe;
+	}
+	public Hashtable<Integer, Matrix> intialize( Hashtable<Integer, Matrix> hashtable) {
+		for (int i = 0; i < 8; i++)
+			hashtable.put(i, new Matrix());
+		return hashtable;
+
+	}
+
+	public void Out(Hashtable<Integer, Matrix> hashtable) {
+		for (int i = 0; i < 8; i++)
+			System.out.println("The Key:" + i + " Value isSafe " + hashtable.get(i).getIsSafe() + " values " + hashtable.get(i).getValue());
+	}
+	public int EightQueenCondition(int key,Hashtable<Integer, Matrix> hashtable)
+	{
+		if(key!=0)
+		{
+			return key;
+		}
+		else {
+			if(isSafeToPalce(hashtable.get(key).getValue(), key, hashtable.get(key).getValue()+1, key))
+			{
+				Matrix m=new Matrix(true,hashtable.get(key).getValue()+1);
+				hashtable.put(key, m);
+				key++;
+				return EightQueenCondition(key, hashtable);
+			}
+		}
+	}
+}

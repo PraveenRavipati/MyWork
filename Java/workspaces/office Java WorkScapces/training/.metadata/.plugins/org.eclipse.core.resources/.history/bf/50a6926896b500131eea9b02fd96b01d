@@ -1,0 +1,13 @@
+package com.binarysearch.testcases;
+
+import com.binarysearch.bean.Employee;
+
+public class test1 {
+
+	public static void main(String[] args) {
+		Employee e1=new Employee(501);
+		System.out.println("the Employee ID is "+e1.getEmpId());
+		System.out.println("The Employee Name is"+e1.getEmpName());
+	}
+
+}

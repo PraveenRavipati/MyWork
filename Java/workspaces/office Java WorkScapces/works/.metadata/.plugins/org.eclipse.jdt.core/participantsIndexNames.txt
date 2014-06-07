@@ -1,0 +1,7 @@
+INDEX VERSION 1.126
+/home/praveen/works/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3917615799.index
+/javatraining2014/src
+/home/praveen/works/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3172256935.index
+/javaTraining/src
+/home/praveen/works/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3100959325.index
+/LoginProperty/src

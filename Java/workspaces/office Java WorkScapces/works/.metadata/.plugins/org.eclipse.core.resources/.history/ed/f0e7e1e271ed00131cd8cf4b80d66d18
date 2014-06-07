@@ -1,0 +1,25 @@
+package com.vl.listner;
+
+import java.util.Properties;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletContextEvent;
+import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
+
+import com.vl.resources.PropertyLoader;
+public class AppServletContext implements ServletContextListener {
+
+    public void contextInitialized(ServletContextEvent contextEvent) {
+       Properties properties=PropertyLoader.getInstance();
+       ServletContext context=contextEvent.getServletContext();
+    }
+
+	/**
+     * @see ServletContextListener#contextDestroyed(ServletContextEvent)
+     */
+    public void contextDestroyed(ServletContextEvent arg0) {
+        // TODO Auto-generated method stub
+    }
+	
+}

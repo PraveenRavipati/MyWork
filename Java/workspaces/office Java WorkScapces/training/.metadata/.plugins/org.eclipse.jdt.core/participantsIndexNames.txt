@@ -1,0 +1,5 @@
+INDEX VERSION 1.126
+/home/praveen/Downloads/wokspaces/training/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2211319749.index
+/FileterExamples/src
+/home/praveen/Downloads/wokspaces/training/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3100959325.index
+/LoginProperty/src

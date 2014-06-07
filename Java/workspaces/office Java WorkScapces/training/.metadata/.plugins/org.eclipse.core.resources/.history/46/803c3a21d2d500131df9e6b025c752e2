@@ -1,0 +1,42 @@
+package com.vl.version1;
+
+import com.threads.testcases.ReadWriteThread1;
+
+public class ReadWriteProgram {
+	public static void main(String[] args) {
+		String Filepath="/home/praveen/Desktop/file1.txt";
+		String operation[] = {"Write","Read","Read", "Write","Write","Read"};
+		for (int i = 0; i < operation.length; i++) {
+			ReadWriteThread1 rw = new ReadWriteThread1(operation[i],Filepath);
+			rw.start();
+	}
+}
+
+class FileOperation {
+	public void readFile() {
+
+	}
+
+	public void writeFile() {
+
+	}
+}
+
+class ReadLock {
+	public void getReadLock() {
+
+	}
+
+	public void release() {
+
+	}
+}
+class WriteLock {
+	public void getWriteLock() {
+
+	}
+
+	public void release() {
+
+	}
+}

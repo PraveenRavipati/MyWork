@@ -1,0 +1,5 @@
+package com.inteended.switching;
+
+public interface Condtion {
+
+}

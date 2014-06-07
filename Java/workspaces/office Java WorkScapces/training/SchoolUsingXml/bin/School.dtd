@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT School (Details,Staff,Classes)>
+<!ELEMENT Details (SchoolName,Address)>
+<!ELEMENT SchoolName (#PCDATA)>
+<!ELEMENT Address (#PCDATA)>
+<!ELEMENT Staff (Teacher+)>
+<!ELEMENT Teacher (Name,ClassResponesable)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT ClassResponesable (#PCDATA)>
+<!ELEMENT Classes (Class+)>
+<!ELEMENT Class (ClassName,Students)>
+<!ELEMENT ClassName (#PCDATA)>
+<!ELEMENT Students (Student+)>
+<!ELEMENT Student (SName,SDOB,SAddress)>
+<!ELEMENT SName (#PCDATA)>
+<!ELEMENT SDOB (#PCDATA)>
+<!ELEMENT SAddress (#PCDATA)>

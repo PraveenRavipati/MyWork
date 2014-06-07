@@ -1,0 +1,47 @@
+body { background-color: aqua;}
+
+.nav ul ul{
+	display: none;
+}
+.nav ul li:HOVER > ul {
+	display: block;
+}
+.nav ul {
+	padding: 0 20px;
+	border-radius: 10px;
+	list-style: none;
+	position:relative;
+	display: inline-block;
+	background: liner-gradient(top,#efefef 08,#bbbbbb 1008);
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+}
+.nav ul li {
+	float: left;
+}
+.nav ul li a {
+	padding: 5px 10px 5px 10px;
+	display: block;
+	color: green;
+}
+.nav ul li:HOVER a{
+	background: gray;
+	background: liner-gradient(top,#efefef 08,#bbbbbb 1008);
+}
+.nav ul li:HOVER a{
+	color: black;
+}
+.nav ul li:HOVER > ul{
+	margin: 0px;
+	padding: 0px;
+}
+.nav ul li:hover > ul li {
+	float: none;
+	display: block;
+}
+.nav ul li:HOVER > ul li a {
+	color: gray;
+	min-width: 150px;
+}
+.nav ul li:HOVER > ul li a:HOVER{
+	color: fuchsia;
+}

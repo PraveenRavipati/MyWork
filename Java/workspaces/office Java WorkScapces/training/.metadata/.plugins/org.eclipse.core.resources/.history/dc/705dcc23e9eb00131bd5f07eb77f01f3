@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body><%
+        
+        %>
+	<table border="1" width="1000">
+		<tr height="200">
+			<td>Head</td>
+		</tr>
+		<tr height="50">
+			<td><div id="templatemo_menu">
+                <ul>
+                    <li><a href="home.jsp" class="current">Home</a></li>
+                    <li><a href="NewFile.jsp">Profile</a></li>
+                    <li><a href="Services.jsp">Services</a></li>
+                    <li><a href="toDay.jsp">toDay</a></li>
+                    <li><a href="#">Company</a></li>
+                    <li><a href="Contactus.jsp" class="last">Contact</a></li>
+                    <li><a href="logout.jsp">Logout</a></li>
+                </ul> 
+            </div></td>
+		</tr>
+		<tr height="500">
+			<td>Body</td>
+		</tr>
+		<tr height="50">
+			<td>footer</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,92 @@
+package com.vl.version1;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadWriteProgram {
+	public static void main(String[] args) {
+		String Filepath = "/home/praveen/Desktop/file1.txt";
+		String operation[] = { "Write", "Read", "Read", "Write", "Write",
+				"Read" };
+		for (int i = 0; i < operation.length; i++) {
+			FileOperation rw = new FileOperation(operation[i], Filepath);
+			rw.start();
+		}
+	}
+}
+
+class FileOperation extends Thread {
+	String OperationType;
+	String filePath;
+	BufferedReader input;
+	String line;
+	public FileOperation(String string, String filepath) {
+		this.OperationType = string;
+		this.filePath = filepath;
+	}
+
+	public void readFile() throws IOException {
+		ReadLock.getReadLock();
+		input=new BufferedReader(new FileReader(new File(filePath)));
+		while((line=input.readLine())!=null)
+		{
+			System.out.println(line);
+		}
+		ReadLock.release();
+		
+	}
+
+	public void writeFile() {
+
+	}
+
+	@Override
+	public void run() {
+		if(this.OperationType=="Read")
+		{
+			try {
+				this.readFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		else if (this.OperationType=="Write") {
+			this.writeFile();
+		}
+		else {
+			System.out.println("unknown");
+		}
+	}
+}
+
+class ReadLock {
+	boolean condition=true
+	public static synchronized void getReadLock() {
+		while (condition) {
+			if(is_write_Accessing){
+				lock.wait();
+				condition=false;
+			}
+			else{
+				readOperationCount++;
+			}
+		}
+	}
+
+	public static synchronized void release() {
+
+	}
+}
+
+class WriteLock {
+	public void getWriteLock() {
+
+	}
+
+	public void release() {
+
+	}
+}

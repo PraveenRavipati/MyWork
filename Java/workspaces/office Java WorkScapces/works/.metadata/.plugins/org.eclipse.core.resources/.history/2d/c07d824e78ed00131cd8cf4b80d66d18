@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Login</title>
+<link href="style2.css" rel="stylesheet" type="text/css"></link>
+</head>
+<script type="text/javascript">
+
+function onSubmit() {
+    var firstname = document.f1.uname.value;
+    if (firstname == "") {
+    	var n=document.getElementById("uname");
+    	var nCon=document.createTextNode("User Name is Required");
+        alert("Please enter first name...");
+        document.f1.uname.focus();
+        return false;
+    }
+    var pwd = document.f1.pwd.value;
+    if(pwd == ""){
+    	var n=document.getElementById("pwd");
+        var nCon=document.createTextNode("Password is Required");
+        alert("please enter password!!");
+        document.f1.uname.focus();
+        return false;
+    }
+    else{
+    	   return( true );
+    }
+}
+</script>
+<body>
+	<table border="1" width="1000" align="center">
+		<tr height="200">
+			<td>Header</td>
+		</tr>
+		<tr height="50">
+			<td>menu</td>
+		</tr>
+		<tr height="500">
+			<td>
+				<form name="f1" onsubmit="return(onSubmit());">
+					<table align="center">
+						<caption id="caption">Login</caption>
+						<tr>
+							<td>Username</td>
+							<td>:</td>
+							<td><input type="text" name="uname"><p id="uname"></p></td>
+						</tr>
+						<tr>
+							<td>Password</td>
+							<td>:</td>
+							<td><input type="password" name="pwd"><p id="pwd"></p></td>
+						</tr>
+						<tr>
+							<td colspan="3" align="center"><input type="submit"
+								value="Login" onclick="onSubmit()"></td>
+						</tr>
+					</table>
+				</form>
+			</td>
+		</tr>
+		<tr height="50">
+			<td>footer</td>
+		</tr>
+	</table>
+</body>
+</html>

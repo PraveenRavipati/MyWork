@@ -1,0 +1,10 @@
+INDEX VERSION 1.122+/home/praveen/Downloads/wokspaces/training/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3496504580.index
+3268801383.index
+310583451.index
+2594578873.index
+3768596758.index
+3686327589.index
+2814226403.index
+1000060072.index
+571404438.index

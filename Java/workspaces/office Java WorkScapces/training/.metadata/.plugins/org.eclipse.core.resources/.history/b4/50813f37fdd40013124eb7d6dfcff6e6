@@ -1,0 +1,78 @@
+package com.threads.testcases;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class ThreadExample2
+{
+	
+	public static void main(String[] args) {
+		FileOperation fop=new FileOperation();
+		String operation[] = { "Read", "Write", "Write", "Write", "Read",
+				"Write", "Read", "Read", "Write", "Write", "Write", "Read" };
+		List<Thread> list = new ArrayList<Thread>();
+		for (int i = 0; i < operation.length; i++) {
+			ReadWriteThread rw = new ReadWriteThread(fop, operation[i]);
+			rw.start();
+			list.add(rw);
+		}
+		for (Thread t : list) {
+			try {
+				t.join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+class ReadWriteThread  extends Thread
+{
+	String status;
+	FileOperation fop;
+	public ReadWriteThread(FileOperation fop, String status) {
+		this.status=status;
+		this.fop=fop;
+	}
+
+	@Override
+	public void run() {
+		if(FileOperation.isReadable)
+		{
+			synchronized (this) {
+				try {
+					fop.getReadAccess();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+class FileOperation
+{
+	static boolean isReadable=true;
+	static boolean isWriteable=true;
+	public void getReadAccess() throws InterruptedException
+	{
+		System.out.println(Thread.currentThread().getName()+" Im reading the file.......");
+		Thread.sleep(4000);
+	}
+	
+}

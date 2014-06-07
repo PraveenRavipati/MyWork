@@ -1,0 +1,9 @@
+package com.threads.testcases;
+
+
+public class ThreadExample2
+{
+	public static void main(String[] args) {
+		
+	}
+}

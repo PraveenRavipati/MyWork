@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;sampleintended.Azf.java&apos; to &apos;FileStreamsReadnWrite.java&apos;&#x0A;- Original project: &apos;sampleintended&apos;&#x0A;- Original element: &apos;sampleintended.Azf.java&apos;&#x0A;- Renamed element: &apos;sampleintended.FileStreamsReadnWrite.java&apos;" description="Rename compilation unit &apos;Azf.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;sampleintended{Azf.java" name="FileStreamsReadnWrite.java" references="false" stamp="1396592549446" version="1.0"/>
+</session>

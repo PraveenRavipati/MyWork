@@ -1,0 +1,128 @@
+package com.vl.school.testclasses;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+
+import com.vl.handlers.MyErrorHandler;
+import com.vl.handlers.SaxHandler;
+import com.vl.school.bean.School;
+
+public class SchoolSearch 
+{
+	static School school=null;
+	static boolean isValidate=false;
+	public static void main(String[] args) 
+	{
+		SchoolSearch ss=new SchoolSearch();
+		ss.input();
+	}
+	public void input()
+	{
+
+		Scanner s=new Scanner(System.in);
+		int option;
+		boolean isValidate=false;
+		boolean condition=true;
+		while (condition) {
+
+			System.out.println("Menu");
+			System.out.println("1)Enter New file");
+			System.out.println("2)search teacher");
+			System.out.println("3)search student");
+			System.out.println("4)search through class");
+			System.out.println("5)Exit");
+			option=s.nextInt();
+			if(option==1){
+				System.out.println("Enter the file path:");
+				String filePath=s.next();
+				isValidate=false;
+				school=null;
+				SAXParserFactory factory=SAXParserFactory.newInstance();
+				try {
+					SAXParser parser=factory.newSAXParser();
+					SaxHandler handler=new SaxHandler();
+					XMLReader reader=parser.getXMLReader();
+					reader.setErrorHandler(new MyErrorHandler());
+					reader.setContentHandler(handler);
+					reader.parse(new InputSource(filePath));
+
+				} catch (ParserConfigurationException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (SAXException e) {
+					// TODO Auto-generated catch block
+					isValidate=false;
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			else if (option==2) {
+				if(isValidate){
+
+				}
+				else {
+					System.out.println("file not found or invalid");
+				}
+			}
+			else if (option==3) {
+				if(isValidate){
+
+				}
+				else {
+					System.out.println("file not found or invalid");
+				}
+			}
+			else if (option==4) {
+				System.out.println("4");
+			}
+			else if (option==5) {
+				condition=false;
+			}
+		}
+	}
+
+}
+
+/*String loop="y";
+Scanner s=new Scanner(System.in);
+while (loop=="y") 
+{
+	System.out.println("Enter the File Path:");
+	String filepath=s.next();
+	SAXParserFactory factory=SAXParserFactory.newInstance();
+	try 
+	{
+		factory.setValidating(true);
+		factory.setNamespaceAware(true);
+		SAXParser parser=factory.newSAXParser();
+		SaxHandler handler=new SaxHandler();
+		XMLReader reader=parser.getXMLReader();
+		reader.setErrorHandler(new MyErrorHandler());
+		reader.setContentHandler(handler);
+		reader.parse(new InputSource(filepath));
+		handler.display();
+	} catch (ParserConfigurationException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	} catch (SAXException e) 
+	{
+
+	} catch (IOException e) 
+	{
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	System.out.println("do you want to continue:(y/n)");
+	loop=s.next();
+}
+ */

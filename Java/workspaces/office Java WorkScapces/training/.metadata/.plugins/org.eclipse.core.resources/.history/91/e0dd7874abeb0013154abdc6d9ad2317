@@ -1,0 +1,10 @@
+package com.vl.resources;
+
+import java.util.Properties;
+
+public class PropertyLoader {
+	private final static Properties PROPERTIES=new Properties();
+	public Properties getInstance(){
+		return null;
+	}
+}

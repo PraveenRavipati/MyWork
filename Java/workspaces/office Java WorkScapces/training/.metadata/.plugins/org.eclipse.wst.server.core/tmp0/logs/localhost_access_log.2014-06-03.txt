@@ -1,0 +1,8 @@
+127.0.0.1 - - [03/Jun/2014:16:16:18 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [03/Jun/2014:16:16:18 +0530] "GET /javatraining2014/home.html HTTP/1.1" 304 -
+127.0.0.1 - - [03/Jun/2014:16:16:19 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [03/Jun/2014:16:17:48 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [03/Jun/2014:16:17:48 +0530] "GET /LoginProperties/Login.html HTTP/1.1" 200 1146
+127.0.0.1 - - [03/Jun/2014:16:18:20 +0530] "GET /LoginProperties/Login.html HTTP/1.1" 200 1148
+127.0.0.1 - - [03/Jun/2014:16:23:10 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [03/Jun/2014:16:23:10 +0530] "GET /LoginProperties/Login.html HTTP/1.1" 304 -

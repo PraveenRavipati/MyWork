@@ -1,0 +1,25 @@
+package com.threads.testcases;
+
+
+public class ThreadExample2
+{
+	public static void main(String[] args) {
+		String operation[] = { "Read", "Write", "Write", "Write", "Read",
+				"Write", "Read", "Read", "Write", "Write", "Write", "Read" };
+	}
+}
+
+
+
+
+
+
+
+class ReadWriteThread  extends Thread
+{
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		super.run();
+	}
+}

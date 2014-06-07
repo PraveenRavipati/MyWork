@@ -1,0 +1,49 @@
+package com.snapfish.threads.beans;
+
+import java.util.Hashtable;
+
+public class AccountRecord {
+	static Hashtable<Integer,AccountRecord> map;
+	private int AccountId;
+	private double amount;
+	public AccountRecord(int AccountId) {
+		this.AccountId=AccountId;
+	}
+	public int getAccountId() {
+		return AccountId;
+	}
+	public void setAccountId(int accountId) {
+		AccountId = accountId;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	public static synchronized AccountRecord setAccountRecord(Integer UserId,Hashtable<Integer, AccountRecord> set)
+	{
+		map=set;
+		AccountRecord obj=null;
+		if(map.containsKey(UserId))
+		{
+			obj=map.get(UserId);
+			System.out.println("Userid:"+UserId+" contains in Thread:"+Thread.currentThread().getName()+" with amount:"+obj.getAccountId());
+		}
+		else {
+			System.out.println("Userid:"+UserId+" not contains");
+			obj=new AccountRecord(UserId);
+			map.put(UserId,obj);
+		}
+		System.out.println("Object:"+obj.getAccountId()+" amount:"+obj.getAmount()+" Thread:"+Thread.currentThread().getName()+" initialized");
+		return obj;
+	}
+	public AccountRecord addValue(double amount) {
+		this.amount=this.amount+amount;
+		return this;
+	}
+	public AccountRecord diffValue(double amount) {
+		this.amount=this.amount-amount;
+		return this;
+	}
+}

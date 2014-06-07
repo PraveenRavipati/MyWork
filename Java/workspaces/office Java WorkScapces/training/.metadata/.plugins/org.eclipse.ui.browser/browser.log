@@ -1,0 +1,325 @@
+
+May 01, 2014 15:04:29.68 NEW SESSION
+May 01, 2014 15:04:29.68 
+May 01, 2014 15:04:29.68 (process:3067): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 01, 2014 15:04:29.69 Error: Failed to send command: 500 command not parseable
+May 01, 2014 15:04:29.71 
+May 01, 2014 15:04:29.71 (process:3074): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+May 21, 2014 11:12:21.61 NEW SESSION
+May 21, 2014 11:12:21.61 
+May 21, 2014 11:12:21.63 (process:24655): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+May 30, 2014 11:34:29.63 NEW SESSION
+May 30, 2014 11:34:29.63 
+May 30, 2014 11:34:29.64 (process:3304): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:38:26.69 
+May 30, 2014 11:38:26.69 (process:3469): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:41:23.22 
+May 30, 2014 11:41:23.22 (process:3640): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:42:18.52 
+May 30, 2014 11:42:18.52 (process:3734): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:44:50.71 
+May 30, 2014 11:44:50.71 (process:3821): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:47:32.27 
+May 30, 2014 11:47:32.27 (process:4017): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:49:04.71 
+May 30, 2014 11:49:04.71 (process:4101): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:49:18.00 
+May 30, 2014 11:49:18.00 (process:4117): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:49:58.48 
+May 30, 2014 11:49:58.48 (process:4202): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:51:08.72 
+May 30, 2014 11:51:08.72 (process:4283): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:51:47.06 
+May 30, 2014 11:51:47.06 (process:4368): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:53:10.56 
+May 30, 2014 11:53:10.56 (process:4456): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:54:30.22 
+May 30, 2014 11:54:30.22 (process:4539): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 11:56:01.42 
+May 30, 2014 11:56:01.42 (process:4564): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:38:20.51 
+May 30, 2014 12:38:20.51 (process:5476): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:42:26.71 
+May 30, 2014 12:42:26.71 (process:5588): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:49:16.53 
+May 30, 2014 12:49:16.53 (process:5789): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:50:51.21 
+May 30, 2014 12:50:51.21 (process:5901): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:51:36.84 
+May 30, 2014 12:51:36.84 (process:5988): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:51:50.07 
+May 30, 2014 12:51:50.07 (process:6001): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:52:22.25 
+May 30, 2014 12:52:22.25 (process:6017): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:53:20.47 
+May 30, 2014 12:53:20.47 (process:6103): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 12:54:44.49 
+May 30, 2014 12:54:44.49 (process:6214): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 13:28:37.40 
+May 30, 2014 13:28:37.40 (process:6619): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 13:30:33.58 
+May 30, 2014 13:30:33.58 (process:6746): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 13:32:48.34 
+May 30, 2014 13:32:48.34 (process:6840): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 14:14:56.75 
+May 30, 2014 14:14:56.75 (process:7754): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 14:49:25.63 
+May 30, 2014 14:49:25.63 (process:8010): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 14:56:11.18 
+May 30, 2014 14:56:11.18 (process:8205): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 15:01:13.88 
+May 30, 2014 15:01:13.88 (process:8395): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+May 30, 2014 15:17:07.73 
+May 30, 2014 15:17:07.73 (process:8664): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 03, 2014 16:16:18.88 NEW SESSION
+Jun 03, 2014 16:16:18.88 
+Jun 03, 2014 16:16:18.89 (process:13841): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 03, 2014 16:17:48.64 
+Jun 03, 2014 16:17:48.64 (process:13950): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 03, 2014 16:23:10.78 
+Jun 03, 2014 16:23:10.78 (process:14258): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 10:49:00.19 
+Jun 04, 2014 10:49:00.19 (process:20441): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 10:49:00.24 Error: No running window found
+Jun 04, 2014 10:49:00.26 
+Jun 04, 2014 10:49:00.26 (process:20447): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:23:40.83 
+Jun 04, 2014 11:23:40.83 (process:21477): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:24:52.77 
+Jun 04, 2014 11:24:52.77 (process:21536): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:25:46.50 
+Jun 04, 2014 11:25:46.50 (process:21662): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:29:24.83 
+Jun 04, 2014 11:29:24.84 (process:21746): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:33:30.84 
+Jun 04, 2014 11:33:30.84 (process:21888): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:37:59.04 
+Jun 04, 2014 11:37:59.04 (process:22006): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:39:22.35 
+Jun 04, 2014 11:39:22.35 (process:22048): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 04, 2014 11:48:05.77 NEW SESSION
+Jun 04, 2014 11:48:05.77 
+Jun 04, 2014 11:48:05.77 (process:22210): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 11:58:47.81 
+Jun 04, 2014 11:58:47.81 (process:22379): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 12:00:48.25 
+Jun 04, 2014 12:00:48.25 (process:22475): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 12:00:59.35 
+Jun 04, 2014 12:00:59.35 (process:22490): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 12:01:24.77 
+Jun 04, 2014 12:01:24.77 (process:22564): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 14:32:40.29 
+Jun 04, 2014 14:32:40.29 (process:24021): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 14:34:34.12 
+Jun 04, 2014 14:34:34.12 (process:24142): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 14:37:38.85 
+Jun 04, 2014 14:37:38.85 (process:24172): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 14:39:48.22 
+Jun 04, 2014 14:39:48.22 (process:24296): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 14:41:27.99 
+Jun 04, 2014 14:41:27.99 (process:24397): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 14:42:31.52 
+Jun 04, 2014 14:42:31.52 (process:24486): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 04, 2014 15:16:52.33 NEW SESSION
+Jun 04, 2014 15:16:52.33 
+Jun 04, 2014 15:16:52.33 (process:26086): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 15:16:52.34 Error: No running window found
+Jun 04, 2014 15:16:52.35 
+Jun 04, 2014 15:16:52.35 (process:26093): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 15:18:32.32 
+Jun 04, 2014 15:18:32.32 (process:26249): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 15:33:55.59 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 15:34:57.100 
+Jun 04, 2014 15:34:57.100 (evince:26430): EvinceDocument-CRITICAL **: ev_document_get_n_pages: assertion 'EV_IS_DOCUMENT (document)' failed
+Jun 04, 2014 15:35:59.91 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 15:36:56.39 NOTE: child process received `Goodbye', closing down
+Jun 04, 2014 15:39:04.09 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 15:39:15.26 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 15:39:22.45 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 15:39:23.30 
+Jun 04, 2014 15:39:23.30 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7fab1ceee370' of type 'MaiAtkType139'
+Jun 04, 2014 15:39:23.30 
+Jun 04, 2014 15:39:23.30 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7faaf91180a0' of type 'MaiAtkType13b'
+Jun 04, 2014 15:39:23.31 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 15:39:23.43 
+Jun 04, 2014 15:39:23.43 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7fab1ceee370' of type 'MaiAtkType139'
+Jun 04, 2014 15:39:23.43 
+Jun 04, 2014 15:39:23.43 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7faaf91180a0' of type 'MaiAtkType13b'
+Jun 04, 2014 15:39:23.47 
+Jun 04, 2014 15:39:23.47 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7fab1ceee370' of type 'MaiAtkType139'
+Jun 04, 2014 15:39:23.47 
+Jun 04, 2014 15:39:23.47 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7faaf91180a0' of type 'MaiAtkType13b'
+Jun 04, 2014 15:39:24.16 
+Jun 04, 2014 15:39:24.16 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7fab1ceee370' of type 'MaiAtkType139'
+Jun 04, 2014 15:39:24.16 
+Jun 04, 2014 15:39:24.16 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7faaf91180a0' of type 'MaiAtkType13b'
+Jun 04, 2014 15:39:25.71 
+Jun 04, 2014 15:39:25.71 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7faaf9118940' of type 'MaiAtkType139'
+Jun 04, 2014 15:39:25.71 
+Jun 04, 2014 15:39:25.71 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'load_complete' is invalid for instance '0x7fab031e7940' of type 'MaiAtkType13b'
+Jun 04, 2014 15:40:32.86 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 15:42:29.12 NOTE: child process received `Goodbye', closing down
+Jun 04, 2014 15:51:20.43 NOTE: child process received `Goodbye', closing down
+Jun 04, 2014 16:19:57.22 
+Jun 04, 2014 16:19:57.22 (process:27351): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 16:20:44.75 
+Jun 04, 2014 16:20:44.75 (process:27430): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 16:38:01.28 
+Jun 04, 2014 16:38:01.28 (process:27573): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 16:38:09.79 
+Jun 04, 2014 16:38:09.79 (process:27583): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 16:39:27.48 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:39:28.02 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:39:36.21 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:39:38.91 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:39:39.01 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:39:51.34 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:41:17.20 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:42:08.97 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:42:10.48 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:42:17.26 TypeError: external.getUnityObject is not a function
+Jun 04, 2014 16:57:11.30 
+Jun 04, 2014 16:57:11.30 (process:28090): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 16:57:25.60 
+Jun 04, 2014 16:57:25.60 (firefox:26093): GLib-GObject-WARNING **: /build/buildd/glib2.0-2.38.1/./gobject/gsignal.c:3431: signal name 'selection_changed' is invalid for instance '0x7fab038d5000' of type 'MaiAtkType3'
+Jun 04, 2014 16:58:48.27 NOTE: child process received `Goodbye', closing down
+Jun 04, 2014 17:30:06.45 
+Jun 04, 2014 17:30:06.45 (process:28547): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 17:51:09.46 
+Jun 04, 2014 17:51:09.46 (process:28719): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 18:47:50.95 
+Jun 04, 2014 18:47:50.95 (process:29324): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 04, 2014 18:51:23.32 NEW SESSION
+Jun 04, 2014 18:51:23.32 
+Jun 04, 2014 18:51:23.32 (process:30035): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 18:52:48.53 
+Jun 04, 2014 18:52:48.53 (process:30104): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 18:59:41.01 
+Jun 04, 2014 18:59:41.01 (process:30206): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 04, 2014 19:27:47.56 
+Jun 04, 2014 19:27:47.56 (process:30350): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 05, 2014 10:23:10.36 NEW SESSION
+Jun 05, 2014 10:23:10.36 
+Jun 05, 2014 10:23:10.38 (process:2908): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:29:55.53 
+Jun 05, 2014 10:29:55.53 (process:3081): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:31:38.45 
+Jun 05, 2014 10:31:38.45 (process:3184): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:31:38.46 Error: No running window found
+Jun 05, 2014 10:31:38.48 
+Jun 05, 2014 10:31:38.48 (process:3190): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:49:38.38 
+Jun 05, 2014 10:49:38.38 (process:3873): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:56:15.81 
+Jun 05, 2014 10:56:15.81 (process:4196): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:57:39.39 
+Jun 05, 2014 10:57:39.39 (process:4289): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:58:14.22 
+Jun 05, 2014 10:58:14.22 (process:4310): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 10:58:55.65 
+Jun 05, 2014 10:58:55.65 (process:4334): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 11:02:52.05 
+Jun 05, 2014 11:02:52.05 (process:4455): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 11:17:28.28 
+Jun 05, 2014 11:17:28.28 (process:5131): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 11:18:26.98 
+Jun 05, 2014 11:18:26.98 (process:5216): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 11:20:27.56 
+Jun 05, 2014 11:20:27.56 (process:5351): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 11:22:05.40 
+Jun 05, 2014 11:22:05.40 (process:5485): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 11:23:38.13 
+Jun 05, 2014 11:23:38.13 (process:5608): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 05, 2014 14:01:47.08 NEW SESSION
+Jun 05, 2014 14:01:47.08 
+Jun 05, 2014 14:01:47.08 (process:7393): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 14:02:52.73 
+Jun 05, 2014 14:02:52.73 (process:7417): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 05, 2014 14:27:49.31 NEW SESSION
+Jun 05, 2014 14:27:49.31 
+Jun 05, 2014 14:27:49.31 (process:8170): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 14:28:53.51 
+Jun 05, 2014 14:28:53.51 (process:8204): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 16:52:48.91 
+Jun 05, 2014 16:52:48.91 (process:9129): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:31:00.20 
+Jun 05, 2014 17:31:00.20 (process:9426): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 05, 2014 17:35:33.71 NEW SESSION
+Jun 05, 2014 17:35:33.71 
+Jun 05, 2014 17:35:33.71 (process:9729): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:41:12.65 
+Jun 05, 2014 17:41:12.65 (process:9762): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:43:26.98 
+Jun 05, 2014 17:43:26.98 (process:9901): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:44:35.68 
+Jun 05, 2014 17:44:35.68 (process:9981): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:45:37.59 
+Jun 05, 2014 17:45:37.59 (process:10072): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:46:24.66 
+Jun 05, 2014 17:46:24.66 (process:10215): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:50:28.37 
+Jun 05, 2014 17:50:28.37 (process:10445): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:55:04.32 
+Jun 05, 2014 17:55:04.32 (process:10552): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 17:59:46.32 
+Jun 05, 2014 17:59:46.32 (process:10698): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:00:16.24 
+Jun 05, 2014 18:00:16.24 (process:10780): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:00:36.55 
+Jun 05, 2014 18:00:36.55 (process:10790): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:01:07.74 
+Jun 05, 2014 18:01:07.74 (process:10887): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:01:36.62 
+Jun 05, 2014 18:01:36.62 (process:10974): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:09:58.83 
+Jun 05, 2014 18:09:58.83 (process:11077): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:11:02.33 
+Jun 05, 2014 18:11:02.33 (process:11136): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:15:55.26 
+Jun 05, 2014 18:15:55.26 (process:11204): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:22:50.10 
+Jun 05, 2014 18:22:50.10 (process:11539): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:24:43.52 
+Jun 05, 2014 18:24:43.52 (process:11630): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:25:51.46 
+Jun 05, 2014 18:25:51.46 (process:11717): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:26:54.47 
+Jun 05, 2014 18:26:54.47 (process:11795): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:29:02.08 
+Jun 05, 2014 18:29:02.08 (process:11816): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:34:02.83 
+Jun 05, 2014 18:34:02.83 (process:11865): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:38:55.51 
+Jun 05, 2014 18:38:55.51 (process:11958): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:40:05.33 
+Jun 05, 2014 18:40:05.33 (process:12042): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 18:58:02.36 
+Jun 05, 2014 18:58:02.36 (process:12102): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 19:19:41.81 
+Jun 05, 2014 19:19:41.81 (process:12179): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 05, 2014 19:26:55.18 
+Jun 05, 2014 19:26:55.18 (process:12212): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+Jun 06, 2014 11:15:26.79 NEW SESSION
+Jun 06, 2014 11:15:26.79 
+Jun 06, 2014 11:15:26.81 (process:2909): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 06, 2014 11:18:17.100 
+Jun 06, 2014 11:18:17.100 (process:3019): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 06, 2014 11:21:20.11 
+Jun 06, 2014 11:21:20.11 (process:3144): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 06, 2014 11:21:34.11 
+Jun 06, 2014 11:21:34.11 (process:3162): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 06, 2014 11:22:27.08 
+Jun 06, 2014 11:22:27.08 (process:3241): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+Jun 06, 2014 11:23:21.78 
+Jun 06, 2014 11:23:21.78 (process:3323): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed

@@ -1,0 +1,36 @@
+package com.vl.version1;
+
+public class ReadWriteProgram {
+	public static void main(String[] args) {
+		
+	}
+}
+
+class FileOperation {
+	public void readFile() {
+
+	}
+
+	public void writeFile() {
+
+	}
+}
+
+class ReadLock {
+	public void getReadLock() {
+
+	}
+
+	public void release() {
+
+	}
+}
+class WriteLock {
+	public void getWriteLock() {
+
+	}
+
+	public void release() {
+
+	}
+}

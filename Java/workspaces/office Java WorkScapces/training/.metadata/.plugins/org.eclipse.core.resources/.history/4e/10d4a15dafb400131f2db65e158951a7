@@ -1,0 +1,54 @@
+package testClasses.tests;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+import praveen.bean.EmpBean;
+
+import com.myrules.MyCriteria;
+import com.searchs.BinarySearch;
+
+public class Test extends MyCriteria{
+
+	public static void main(String[] args) {
+		MyCriteria m=new Test();
+		Scanner s = new Scanner(System.in);
+		System.out.print("How many records do you want to Enter:\t");
+		int len = s.nextInt();
+		Object[] emp = input(len);
+		Object SearchKey = m.inputOfSearchKey();
+		if (SearchKey != null) {
+			if (m.isExist(emp, SearchKey,m)) {
+				System.out.println("The Employee found");
+			} else {
+				System.out.println("The Employee Not found");
+			}
+		} else {
+			System.out.println("Sorry try again...!");
+		}
+
+	}
+	private static Object[] input(int len) {
+		Scanner s = new Scanner(System.in);
+		Object[] emp = new EmpBean[len];
+		System.out.println("Enter the Employee Details");
+		for (int i = 0; i < emp.length; i++) {
+			emp[i] = new EmpBean();
+			int id = 1;
+			try {
+                                System.out.print("\n\nEnter The ID "+(i+1)+" :");
+				id = s.nextInt();
+			} catch (InputMismatchException e) {
+				System.out.println("\n\n\n\nID Should be Number");
+				System.out.println("Sorry Try Again....!");
+				System.exit(0);
+			}
+                        System.out.print("Enter The Name "+(i+1)+" :");
+			String name = s.next();
+			((EmpBean) emp[i]).EmployeeID = id;
+			((EmpBean) emp[i]).EmployeeName = name;
+		}
+		return emp;
+	}
+
+}

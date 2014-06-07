@@ -1,0 +1,16 @@
+package testClasses.tests;
+
+import java.util.Scanner;
+
+
+public class test {
+
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter The No OF Elements To Enter:");
+		int len=s.nextInt();
+		Object[] id=new Integer[len];
+	}
+
+}

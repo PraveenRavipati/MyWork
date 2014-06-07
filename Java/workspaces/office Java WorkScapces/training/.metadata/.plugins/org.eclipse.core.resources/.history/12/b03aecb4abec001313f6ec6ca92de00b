@@ -1,0 +1,35 @@
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class MyFilter implements Filter{
+
+	public void init(FilterConfig arg0) throws ServletException {}
+	
+	public void doFilter(ServletRequest req, ServletResponse resp,
+			FilterChain chain) throws IOException, ServletException {
+		HttpServletRequest request=req;
+		HttpServletResponse response=resp;
+		PrintWriter out=resp.getWriter();
+		
+		String password=req.getParameter("password");
+		if(password.equals("admin")){
+			System.out.println("first");
+//		chain.doFilter(req, resp);//sends request to next resource
+			
+		}
+		else{
+		out.print("username or password error!");
+		RequestDispatcher rd=req.getRequestDispatcher("index.html");
+		rd.include(req, resp);
+		}
+		
+	}
+	public void destroy() {}
+
+	
+
+}

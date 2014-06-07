@@ -1,0 +1,15 @@
+127.0.0.1 - - [04/Jun/2014:12:06:52 +0530] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [04/Jun/2014:12:06:52 +0530] "GET /javatraining2014/home.html HTTP/1.1" 200 1060
+127.0.0.1 - - [04/Jun/2014:12:06:52 +0530] "GET /javatraining2014/style.css HTTP/1.1" 200 957
+127.0.0.1 - - [04/Jun/2014:12:06:52 +0530] "GET /javatraining2014/images/templatemo_menu_bg.jpg HTTP/1.1" 200 6599
+127.0.0.1 - - [04/Jun/2014:12:06:52 +0530] "GET /javatraining2014/images/templatemo_menu_divider.png HTTP/1.1" 200 114
+127.0.0.1 - - [04/Jun/2014:12:06:52 +0530] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [04/Jun/2014:12:07:22 +0530] "GET /javatraining2014/home.html HTTP/1.1" 200 1060
+127.0.0.1 - - [04/Jun/2014:12:07:24 +0530] "GET /javatraining2014/home.html HTTP/1.1" 200 1060
+127.0.0.1 - - [04/Jun/2014:12:07:25 +0530] "GET /javatraining2014/Login.html HTTP/1.1" 200 1447
+127.0.0.1 - - [04/Jun/2014:12:07:27 +0530] "GET /javatraining2014/home.html HTTP/1.1" 200 1060
+127.0.0.1 - - [04/Jun/2014:12:07:29 +0530] "GET /javatraining2014/Login.html HTTP/1.1" 200 1447
+127.0.0.1 - - [04/Jun/2014:12:07:31 +0530] "GET /javatraining2014/Services.html HTTP/1.1" 200 1060
+127.0.0.1 - - [04/Jun/2014:12:07:33 +0530] "GET /javatraining2014/Register.html HTTP/1.1" 200 2036
+127.0.0.1 - - [04/Jun/2014:12:07:38 +0530] "GET /javatraining2014/Contactus.html HTTP/1.1" 200 1060
+127.0.0.1 - - [04/Jun/2014:12:07:41 +0530] "GET /javatraining2014/home.html HTTP/1.1" 200 1060

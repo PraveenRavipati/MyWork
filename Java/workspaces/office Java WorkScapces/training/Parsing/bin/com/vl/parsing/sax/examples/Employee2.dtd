@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Employees (Employee+)>
+<!ELEMENT Employee (age,name,gender,role)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT role (#PCDATA)>
+
+<!ATTLIST Employee id CDATA #REQUIRED>

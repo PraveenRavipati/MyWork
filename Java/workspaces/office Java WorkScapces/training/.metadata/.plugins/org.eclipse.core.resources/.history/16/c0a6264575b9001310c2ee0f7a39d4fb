@@ -1,0 +1,6 @@
+package indentation.writecondition;
+
+public interface WriteCondition {
+	public String condition(String readFilePath);
+
+}

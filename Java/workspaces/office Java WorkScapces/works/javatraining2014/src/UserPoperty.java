@@ -1,0 +1,94 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Properties;
+import java.util.Map.Entry;
+
+public class UserPoperty {
+	static private HashMap<String,UserDetails> hashMap;
+	private static final String filePath="/home/praveen/works/javatraining2014/WebContent/WEB-INF/properties/user.properties";
+	
+	UserDetails details=null;
+	public boolean setUserProperty(String key,UserDetails details) throws IOException{
+		OutputStream output = null;
+		Properties prop = new Properties();
+		boolean status=true;
+		output = new FileOutputStream(filePath);
+		hashMap=loadHashTable();
+		System.out.println("The Hash map size is"+hashMap.size());
+		hashMap.put(key, details);
+		System.out.println("The Hash map size is"+hashMap.size());
+		for (Entry<String, UserDetails> entry : hashMap.entrySet()) {
+			String uname= entry.getKey();
+			UserDetails data = entry.getValue();
+			prop.setProperty(uname,data.getName()+","+data.getEmail()+","+data.getUserName()+","+data.getPwd()+","+data.getPhoto());
+		}
+		prop.store(output, "registration");
+		output.close();
+		return status;
+	}
+	public HashMap<String, UserDetails> loadHashTable() throws IOException{
+		InputStream input = null;
+		Properties prop = new Properties();
+		input = new FileInputStream(filePath);
+		prop.load(input);
+		HashMap<String, UserDetails> hMap=new HashMap<String, UserDetails>();
+		Enumeration enuKeys = prop.keys();
+		while (enuKeys.hasMoreElements()) {
+			System.out.println(1);
+			String key = (String) enuKeys.nextElement();
+			String value[] = prop.getProperty(key).split(",");
+			details=new UserDetails();
+			details.setName(value[0]);
+			details.setEmail(value[1]);
+			details.setUserName(value[2]);
+			details.setPwd(value[3]);
+			details.setPhoto(value[4]);
+			hashMap.put(value[2], details);
+			}
+		input.close();
+		return hMap;
+	}
+/*	public HashMap<String, UserDetails> getUserProerty() throws IOException{
+		loadHashTable();
+		return hashMap;
+	}*/
+	public UserDetails getUserDetailsByName(String name) throws IOException{
+		InputStream input = null;
+		Properties prop = new Properties();
+		input = new FileInputStream(filePath);
+		prop.load(input);
+		Enumeration enuKeys = prop.keys();
+		while (enuKeys.hasMoreElements()) {
+			String key = (String) enuKeys.nextElement();
+			String value[] = prop.getProperty(key).split(",");
+			details=new UserDetails();
+			details.setName(value[0]);
+			details.setEmail(value[1]);
+			details.setUserName(value[2]);
+			details.setPwd(value[3]);
+			details.setPhoto(value[4]);
+		}
+		input.close();
+		return details;
+	}
+	public boolean UserExist(String uname) throws IOException{
+		InputStream input = null;
+		Properties prop = new Properties();
+		input = new FileInputStream(filePath);
+		prop.load(input);
+		String name=prop.getProperty(uname);
+		System.out.println(name);
+		input.close();
+		if(name==null){
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+}

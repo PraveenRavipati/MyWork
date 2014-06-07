@@ -1,0 +1,11 @@
+input {
+	width: 200px;
+	height: 20px;
+	border-style: hidden;
+}
+.submit{
+	width: 100px;
+	height: 30px;
+	background-color: aqua;
+	border-style: hidden;
+}

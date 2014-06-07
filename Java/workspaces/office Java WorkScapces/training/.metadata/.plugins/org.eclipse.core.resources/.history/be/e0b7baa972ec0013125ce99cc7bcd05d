@@ -1,0 +1,6 @@
+
+#notMatch{
+	font-family: serif;
+	font: small-caps;
+	color: red;
+}

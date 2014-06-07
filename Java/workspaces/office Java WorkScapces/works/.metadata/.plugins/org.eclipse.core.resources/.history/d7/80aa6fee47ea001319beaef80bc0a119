@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<body>
+	<table border="1" width="900">
+		<tr height="200">
+			<td>Head</td>
+		</tr>
+		<tr height="50">
+			<td>Menu</td>
+		</tr>
+		<tr height="500">
+			<td align="center">
+				<form>
+					<table>
+					<caption>Login</caption>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td>email</td>
+                            <td>:</td>
+                            <td><input type="text" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>password</td>
+                            <td>:</td>
+                            <td><input type="password" name="pwd"></td>
+                        </tr>
+                        <tr>
+                            <td>photo</td>
+                            <td>:</td>
+                            <td><input type="file" name="profile"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center"><input type="submit" value="Login"></td>
+                        </tr>
+					</table>
+				</form>
+			</td>
+		</tr>
+		<tr height="50">
+			<td>footer</td>
+		</tr>
+	</table>
+</body>
+</html>

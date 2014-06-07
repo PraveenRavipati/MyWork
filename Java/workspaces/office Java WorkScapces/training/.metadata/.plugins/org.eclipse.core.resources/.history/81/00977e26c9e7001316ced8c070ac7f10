@@ -1,0 +1,69 @@
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Properties;
+import java.util.Map.Entry;
+
+
+
+public class UserPoperty {
+	private HashMap<String,UserDetails> hashMap=new HashMap<String,UserDetails>(); 
+	Properties prop = new Properties();
+	OutputStream output = null;
+	InputStream input = null;
+	UserDetails details=null;
+	public boolean setUserProperty(String key,UserDetails details) throws IOException{
+		boolean status=true;
+		output = new FileOutputStream("/home/praveen/Downloads/wokspaces/training/javatraining2014/WebContent/properties/user.properties");
+		hashMap.put(key, details);
+		for (Entry<String, UserDetails> entry : hashMap.entrySet()) {
+			String uname= entry.getKey();
+			UserDetails data = entry.getValue();
+			prop.SetProperty(uname,data.getName()+","+data.getEmail()+","+data.getUserName()+","+data.getPwd()+","+data.getPhoto());
+		}
+		prop.store(output, "registration");
+		return status;
+	}
+	public void loadHashTable() throws IOException{
+		input = new FileInputStream("/home/praveen/Downloads/wokspaces/training/javatraining2014/WebContent/properties/user.properties");
+		prop.load(input);
+		
+		Enumeration enuKeys = prop.keys();
+		while (enuKeys.hasMoreElements()) {
+			String key = (String) enuKeys.nextElement();
+			String value[] = prop.getProperty(key).split(",");
+			details=new UserDetails();
+			details.setName(value[0]);
+			details.setEmail(value[1]);
+			details.setUserName(value[2]);
+			details.setPwd(value[3]);
+			details.setPhoto(value[4]);
+			hashMap.put(value[2], details);
+			}
+	}
+	public HashMap<String, UserDetails> getUserProerty() throws IOException{
+		loadHashTable();
+		return hashMap;
+	}
+	public UserDetails getUserDetailsByName(String name) throws FileNotFoundException{
+		input = new FileInputStream("/home/praveen/Downloads/wokspaces/training/javatraining2014/WebContent/properties/user.properties");
+		Enumeration enuKeys = prop.keys();
+		while (enuKeys.hasMoreElements()) {
+			String key = (String) enuKeys.nextElement();
+			String value[] = prop.getProperty(key).split(",");
+			details=new UserDetails();
+			details.setName(value[0]);
+			details.setEmail(value[1]);
+			details.setUserName(value[2]);
+			details.setPwd(value[3]);
+			details.setPhoto(value[4]);
+		}
+		return details;
+	}
+}

@@ -1,0 +1,42 @@
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class Register extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		processRequest(request, response);
+	}
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		processRequest(request, response);
+	}
+	protected void processRequest(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException {
+		UserPoperty usp=new UserPoperty();
+		UserDetails d=new UserDetails();
+		PrintWriter out=response.getWriter();/*
+		String name=request.getParameter("name");
+		String uname=request.getParameter("uname");
+		String email=request.getParameter("email");
+		String pwd=request.getParameter("pwd");*/
+		d.setName(request.getParameter("name"));
+		if(usp.getUserDetailsByName(uname)==null){
+			
+			out.println("Registration Successfull");
+			response.setHeader("refresh", "4 url=./home.html");
+		}
+		else {
+			out.println("User name exist try another ....!");
+			response.setHeader("refresh", "4 url=./Register.html");
+		}
+	}
+
+}

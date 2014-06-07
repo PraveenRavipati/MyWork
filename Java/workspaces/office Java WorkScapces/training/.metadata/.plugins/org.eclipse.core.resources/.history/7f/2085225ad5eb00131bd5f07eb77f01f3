@@ -1,0 +1,64 @@
+<%@page import="com.vl.resources.PropertyLoader"%>
+<%@page import="java.util.Properties"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+        <table border="1" width="1000">
+        <tr height="200">
+            <td>Head</td>
+        </tr>
+        <tr height="50">
+            <td>menu</td>
+        </tr>
+        <tr height="500">
+            <td>
+             <%
+             Properties prop=PropertyLoader.getInstance();
+                           HttpSession hs=request.getSession();
+                           String name=hs.getAttribute("uname").toString();
+                           if(name!=null){
+                        	   String value[]=prop.getProperty(name).split(","); 
+                        	   String photo=name.concat(".jsp");
+                        	   String path="./images/".concat(photo);
+                           
+                           %>
+            <table border="1">
+                    <tr>
+                        <td colspan="3">
+                          <img src="<%=path%>" height="100" width="100"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>name</td>
+                        <td>:</td>
+                        <td><%=value[0]+" "+value[1]%></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>:</td>
+                        <td><%=value[3]%></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>phone</td>
+                        <td>:</td>
+                        <td><%=value[4]%></td>
+                    </tr>
+                </table>
+                <%
+                           }
+                %>
+            </td>
+        </tr>
+        <tr height="50">
+            <td>footer</td>
+        </tr>
+    </table>
+</body>
+</html>
